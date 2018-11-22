@@ -27,5 +27,7 @@ package by.it.koliada._tasks_.lesson04;
 
  */
 public class TaskC2 {
+    public static void main(String... args){
 
+    }
 }

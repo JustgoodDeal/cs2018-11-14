@@ -25,7 +25,15 @@ package by.it.koliada._tasks_.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        Scanner number = new Scanner(System.in);
+        int num = number.nextInt();
+        int sum = 0;
+                for(int i = 1; i <= num; ++i) {
+                       sum += i;
+                            }
+            }
 }

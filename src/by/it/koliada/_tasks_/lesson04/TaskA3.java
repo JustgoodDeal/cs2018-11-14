@@ -22,6 +22,23 @@ package by.it.koliada._tasks_.lesson04;
  */
 
 
-public class TaskA3 {
+import java.util.Scanner;
 
-}
+public class TaskA3 {
+            public static void main(String[] args) {
+                Scanner number = new Scanner(System.in);
+                int a = number.nextInt();
+                int b = number.nextInt();
+                int c = number.nextInt();
+                if (a==b && a==c)
+                    System.out.println(a+" "+b+" "+c);
+                    else if (a==b)
+                        System.out.println(a+" "+b);
+                else if (a==c)
+                    System.out.println(a+" "+c);
+                else if (b==c)
+                    System.out.println(b+" "+c);
+            }
+        }
+
+
