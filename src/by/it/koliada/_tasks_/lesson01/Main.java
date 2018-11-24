@@ -12,6 +12,13 @@ public class Main {
             System.out.printf("%8s %4d %n", binary, i);
 
         }
-
+        byte mi=-1;
+            String y1 = Integer.toOctalString(mi);
+            String z1 = Integer.toHexString(mi).toUpperCase();
+            String binary1 = Integer.toBinaryString(mi);
+            if (binary1.length() > 8) binary1 = binary1.substring(binary1.length() - 8);
+            binary1 = String.format("%8s", binary1).replace(" ", "0");
+            System.out.print(y1 + " " + z1 + " ");
+            System.out.printf("%8s %4d %n", binary1, mi);
     }
 }
