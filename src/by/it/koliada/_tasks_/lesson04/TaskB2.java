@@ -29,18 +29,16 @@ public class TaskB2 {
     public static void main(String[] args) {
         Scanner number = new Scanner(System.in);
         int size = number.nextInt();
-        int i=1,n=1;
-        while(i<=size)
-        {
-            System.out.print(i+" ");
-            while(n<size)
-            {
-                n++;
-                System.out.print(i*n+" ");
+        int x = 1;
+        int y = 1;
+        while (x <= size) {
+            while (y <= size) {
+                System.out.print(x * y + " ");
+                y++;
             }
-            i++;
-            n=1;
-            System.out.println("");
+            x++;
+            y = 1;
+            System.out.println();
         }
-    }
+            }
 }

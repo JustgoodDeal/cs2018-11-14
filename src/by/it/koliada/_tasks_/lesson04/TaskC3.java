@@ -24,5 +24,12 @@ package by.it.koliada._tasks_.lesson04;
 */
 
 public class TaskC3 {
+    public static void main(String[] args) {
+        int x, y;
+        for (x=2; x<11; x++){
+            for (y=2; y<11; y++){
+                System.out.println(x*y+" ");
+            }
 
-}
+        }
+    }}
