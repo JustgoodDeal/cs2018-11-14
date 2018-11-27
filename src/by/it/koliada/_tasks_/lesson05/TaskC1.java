@@ -10,17 +10,42 @@ package by.it.koliada._tasks_.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
+        ArrayList<Integer> list1 = new ArrayList<>();
+        ArrayList<Integer> list2 = new ArrayList<>();
+        ArrayList<Integer> list3 = new ArrayList<>();
+        ArrayList<Integer> list4 = new ArrayList<>();
+        int[]m =new int[20];
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i <m.length; i++) {
+            m [i] = scanner.nextInt();
+        }
+        for (int i = 0; i < m.length; i++) list1.add (m[i]);
 
+        for (int i = 0; i < list1.size(); i++) {
+            int h=list1.get(i);
+            if (h % 2 == 0 && h % 3 == 0) {
+                list2.add(h);
+                list3.add(h); }
+            else if (h % 2 == 0)
+                list2.add(h);
+            else if (h % 3 == 0)
+                list3.add(h);
+            else list4.add(h);
+        }
+        printList(list3);
+        printList(list2);
+        printList(list4);
     }
-
-    private static void printList(List<Integer> list) {
-        for (Integer aList : list) System.out.println(aList);
+    private static void printList(List<Integer> list){
+        for (int i = 0; i < list.size(); i++)
+        {
+            System.out.println(list.get(i));
+        }
     }
-
-
 }

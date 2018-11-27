@@ -29,15 +29,25 @@ public class TaskB3 {
         for (int i = 0; i < m.length; i++) {
             m[i] = scanner.nextInt();
         }
-        int a, b, t;
-        for (a = 1; a < 10; a++)
-            for (b = 10 - 1; b >= a; b--) {
-                if (m[b - 1] > m[b]) {
-                    t = m[b - 1];
-                    m[b - 1] = m[b];
+        int first=m[0];
+        int last=m[9];
+        int a,b,t;
+        for(a=1; a < m.length; a++)
+            for(b=m.length-1; b >= a; b--) {
+                if(m[b-1] > m[b]) {
+                    t = m[b-1];
+                    m[b-1] = m[b];
                     m[b] = t;
                 }
             }
-            
+        for (int i = 0; i < m.length; i++) {
+            if (m[i] == first) {
+                System.out.println("Index of first element="+i);
+                break;
     }
 }
+        for (int i = 0; i < m.length; i++) {
+            if (m[i] == last) {
+                System.out.println("Index of last element="+i);
+                break;
+    }}}}
